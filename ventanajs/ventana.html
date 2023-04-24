@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 1</title>
+    <script src="ventana.js" type="text/javascript"></script>
+</head>
+<body onload="inicializar(), diasRestantes(), mayor(), cadena()">
+    <form>
+        <!--Clase Window-->
+        <label for="pregunta">Deseas abrir una nueva ventana?</label><br>
+        <input type="button" value="Sí, por supuesto!" id="crear">
+        <input type="button" value="Cerrar todo" id="todo">
+        <input type="button" value="Cerrar la ventana abierta" id="cerrar"><br>
+        <label for="mover">Mover la ventana abierta</label>
+        <input type="button" value="moveBy" id="moveBy">
+        <input type="button" value="moveTo" id="moveTo"><br>
+        <label for="tamaño">Aumentar tamaño 50x50px</label>
+        <input type="button" value="aumentar" id="aumentar"><br>
+        <label for="redimensionar">Redimensionar 500x500px</label>
+        <input type="button" value="redimensionar" id="redimensionar">
+    </form>
+    <p id="diasRestantes">
+    </p>
+    <p id="mayorArray">
+        
+    </p>
+    <form>
+        <!--Clase Date-->
+        <input type="text" placeholder="MM/DD" id="aniversario">
+        <input type="button" id="aniversarioBtn" value="Fines de semana"><br>
+        <input type="number" id="formatoFecha" min="1" max="3" placeholder="Formato Fecha">
+        <input type="button" value="Formatear" id="formatoFechaBtn"><br>
+        <input type="number" name="formatoHora" id="formatoHora" min="1" max="2" placeholder="Formato Hora">
+        <input type="button" value="Formatear" id="formatoHoraBtn"><br>
+        <!--Clase Math-->
+        <input type="number" name="base" id="base" placeholder="Base">
+        <input type="number" name="exponente" id="exponente" placeholder="Exponente">
+        <input type="button" value="Calcular Base" id="calcularBase"><br>
+        <input type="number" name="sqrt" id="sqrt" placeholder="Raíz cuadrada">
+        <input type="button" value="Calcular raíz cuadrada" id="sqrtBtn"><br>    
+        <input type="number" name="redondeo" id="redondeo" placeholder="Redondear decimal">
+        <input type="button" value="Redondear" id="redondearBtn"><br>
+        <input type="number" name="trigonometria" id="trigonometria" placeholder="Grados de ángulo">
+        <input type="button" value="Calcular seno" id="senoBtn">
+        <input type="button" value="Calcular coseno" id="cosenoBtn">
+        <input type="button" value="Calcular tangente" id="tangenteBtn"><br>
+        <!--Clase String-->
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellidos">
+        <input type="button" value="Tamaño" id="tamanhoBtn">
+        <input type="button" value="Tamaño sin espacios" id="tamanhoSinBtn">
+        <input type="button" value="Minúsculas" id="minusculasBtn">
+        <input type="button" value="Mayúsculas" id="mayusculasBtn">
+        <input type="button" value="Separado" id="separadoBtn">
+        <input type="button" value="Especial" id="especialBtn">
+
+    </form>
+    <table  id="resultados">
+
+    </table>
+</body>
+</html>
